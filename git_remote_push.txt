@@ -1,0 +1,8 @@
+1.リポジトリを作る
+2.ローカルにgit clone
+3.ローカルでファイルを作る
+4.git add -A //全てを入れる
+5.git comit -m "message"
+6.git push
+7.git push origin master
+
