@@ -54,15 +54,15 @@
         this.innerHTML = 'START'
         diff = (Date.now() - startTime)/1000 - 5;
         console.log(diff);
-        if(diff >= -0.1 && diff <= 0.1){
+        if(diff >= -0.9 && diff <= 0.9){
             result.innerHTML = 'perfect';
 
         }
         else if(diff > 0){
-          result.innerHTML = 'You are' + diff + 'sec late';
+          result.innerHTML = 'You are' + diff.toFixed(2) + 'sec late';
         }
         else{
-          result.innerHTML = 'You are' + diff*(-1) + 'sec fist';
+          result.innerHTML = 'You are' + diff*(-1).toFixed(2) + 'sec fist';
         }
       }
     });
